@@ -1,18 +1,18 @@
-import streamlit as st
-st.set_page_config(page_title="SmartSpoon - Food Analyzer", layout="wide")
+
 import tensorflow as tf
 import numpy as np
 import pandas as pd
 import requests
 import joblib
 import os
-# import streamlit as st
+import streamlit as st
 from tensorflow.keras.preprocessing import image
 import nltk
 from PIL import Image
 import io
-# First Streamlit command must be set_page_config
-# st.set_page_config(page_title="SmartSpoon - Food Analyzer", layout="wide")
+
+# Set page config as the first Streamlit command
+st.set_page_config(page_title="SmartSpoon - Food Analyzer", layout="wide")
 
 # Download NLTK resources
 try:
@@ -467,8 +467,6 @@ def show_feedback_page():
                 st.warning("Please enter your feedback before submitting.")
 
 def main():
-    st.set_page_config(page_title="SmartSpoon - Food Analyzer", layout="wide")
-    
     # Initialize session state
     init_session_state()
     
