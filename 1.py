@@ -9,7 +9,8 @@ from tensorflow.keras.preprocessing import image
 import nltk
 from PIL import Image
 import io
-
+# First Streamlit command must be set_page_config
+st.set_page_config(page_title="SmartSpoon - Food Analyzer", layout="wide")
 # Download NLTK resources
 try:
     nltk.download('vader_lexicon', quiet=True)
